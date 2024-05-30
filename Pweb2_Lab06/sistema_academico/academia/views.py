@@ -1,7 +1,7 @@
 # academia/views.py
 from django.shortcuts import render, redirect
 from .forms import AlumnoForm, CursoForm, NotaForm
-from .models import NotasAlumnosPorCurso
+from .models import Alumno,Curso,NotasAlumnosPorCurso
 
 def crear_alumno(request):
     if request.method == 'POST':
