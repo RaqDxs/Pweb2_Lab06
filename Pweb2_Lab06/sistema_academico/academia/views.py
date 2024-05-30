@@ -3,8 +3,6 @@ from django.shortcuts import render, redirect
 from .forms import AlumnoForm, CursoForm, NotaForm
 from .models import NotasAlumnosPorCurso
 
-# Create your views here.
-
 def crear_alumno(request):
     if request.method == 'POST':
         form = AlumnoForm(request.POST)
